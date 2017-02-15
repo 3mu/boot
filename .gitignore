@@ -27,4 +27,8 @@ target/
 # system ignore
 .DS_Store
 Thumbs.db
+# java
+*.log
+*.lck
+
 
