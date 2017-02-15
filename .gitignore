@@ -30,5 +30,6 @@ Thumbs.db
 # java
 *.log
 *.lck
+*.log.*
 
 
