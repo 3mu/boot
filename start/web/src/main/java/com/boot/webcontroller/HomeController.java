@@ -11,9 +11,8 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class HomeController {
     @RequestMapping("/index")
-    public ModelAndView index(ModelMap map) {
+    public String index(ModelMap map) {
         map.addAttribute("name", "this is my app");
-        map.addAttribute("host", "http://blog.didispace.com");
-        return new ModelAndView("index", map);
+        return "index";
     }
 }
