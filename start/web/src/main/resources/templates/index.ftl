@@ -5,7 +5,6 @@
     <title></title>
 </head>
 <body>
-Velocity模板
-<h1>this is my app ${name}</h1>
+  <h1>this is my app ${name}</h1>
 </body>
 </html>
