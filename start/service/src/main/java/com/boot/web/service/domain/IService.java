@@ -1,4 +1,4 @@
-package com.boot.service.domain;
+package com.boot.web.service.domain;
 
 /**
  * Created by Administrator on 2017/2/18 0018.

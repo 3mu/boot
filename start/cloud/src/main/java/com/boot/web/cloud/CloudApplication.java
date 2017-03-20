@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/3/19 0019.
  */
-package com.boot.cloud;
+package com.boot.web.cloud;
 
 
 import org.springframework.boot.autoconfigure.SpringBootApplication;

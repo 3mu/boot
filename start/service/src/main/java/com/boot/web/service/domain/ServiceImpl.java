@@ -1,6 +1,6 @@
-package com.boot.service.domain;
+package com.boot.web.service.domain;
 
-import com.boot.service.dao.DemoDao;
+import com.boot.web.service.dao.DemoDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;

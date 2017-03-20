@@ -1,6 +1,6 @@
-package com.boot.service.controller;
+package com.boot.web.service.controller;
 
-import com.boot.service.domain.IService;
+import com.boot.web.service.domain.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

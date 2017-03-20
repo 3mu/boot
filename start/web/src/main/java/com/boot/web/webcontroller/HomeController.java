@@ -1,4 +1,4 @@
-package com.boot.webcontroller;
+package com.boot.web.webcontroller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;

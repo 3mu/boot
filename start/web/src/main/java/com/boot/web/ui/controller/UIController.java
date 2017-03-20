@@ -1,6 +1,6 @@
-package com.boot.ui.controller;
+package com.boot.web.ui.controller;
 
-import com.boot.inter.IService;
+import com.boot.web.service.domain.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,7 +19,7 @@ public class UIController {
 
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String Index(Model model) {
-        model.addAttribute("name", service.GetMessage());
+        model.addAttribute("name", service.getMessage());
         return "index";
     }
 }

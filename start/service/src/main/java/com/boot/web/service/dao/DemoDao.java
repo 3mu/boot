@@ -1,4 +1,4 @@
-package com.boot.service.dao;
+package com.boot.web.service.dao;
 
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
