@@ -3,8 +3,8 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
-    <artifactId>com.boot.clond</artifactId>
+    <packaging>jar</packaging>
+    <artifactId>com.boot.cloud</artifactId>
     <parent>
         <artifactId>com.boot.parent</artifactId>
         <groupId>com.boot</groupId>
@@ -18,18 +18,16 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-eureka-server</artifactId>
-        </dependency>
-
     </dependencies>
 
     <dependencyManagement>
@@ -37,7 +35,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Brixton.RELEASE</version>
+                <version>Camden.SR5</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -52,5 +50,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
