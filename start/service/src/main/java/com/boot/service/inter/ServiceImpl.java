@@ -1,7 +1,8 @@
-package com.boot.inter;
+package com.boot.service.inter;
 
+import com.boot.service.dao.DemoDao;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -9,11 +10,14 @@ import org.springframework.stereotype.Service;
 /**
  * Created by Administrator on 2017/2/18 0018.
  */
-//@Repository
-@Component
+
+@Service
+@Repository
 public class ServiceImpl implements IService {
+    @Autowired
+    private DemoDao demoDao;
     @Override
-    public String GetMessage() {
-        return  "this is ioc app";
+    public String getMessage() {
+        return String.valueOf(demoDao.getCount());
     }
 }

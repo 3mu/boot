@@ -1,4 +1,4 @@
-package com.boot.inter;
+package com.boot.service.inter;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -8,5 +8,5 @@ import org.springframework.context.annotation.ComponentScan;
  */
 public interface IService {
 
-    String GetMessage();
+    String getMessage();
 }
