@@ -1,7 +1,6 @@
-package com.boot.service;
+package com.boot.service.controller;
 
-import com.boot.service.inter.IService;
-import org.apache.log4j.Logger;
+import com.boot.service.domain.IService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
