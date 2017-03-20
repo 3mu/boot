@@ -18,4 +18,9 @@ public class ApiController {
     public String getMessage() {
         return iService.getMessage();
     }
+
+    @RequestMapping("/get")
+    public String get() {
+        return "hello services";
+    }
 }

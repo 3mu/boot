@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
  */
 
 @Service
-@Repository
 public class ServiceImpl implements IService {
     @Autowired
     private DemoDao demoDao;
