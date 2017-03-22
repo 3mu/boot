@@ -1,6 +1,7 @@
 package com.boot.web.api;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cloud.netflix.feign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -22,4 +23,15 @@ public class RestApiController {
     public String add() {
         return restTemplate.getForEntity("http://Server/get", String.class).getBody();
     }
+
+    @Autowired
+    private  ServerClient client;
+
+    @RequestMapping(value = "/feign", method = RequestMethod.GET)
+    public  String Feign(){
+        return  client.add();
+    }
+
+
 }
+
