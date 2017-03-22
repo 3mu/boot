@@ -6,9 +6,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@FeignClient("Server")
+/*
+* ServiceHystrix.class 断路器
+* */
+@FeignClient(value = "Server",fallback = ServiceHystrix.class)
 @Service
 public interface ServerClient {
     @RequestMapping(method = RequestMethod.GET, value = "/get")
     String add();
 }
+
