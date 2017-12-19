@@ -1,5 +1,6 @@
 package com.boot.web.ui.controller;
 
+import com.boot.web.api.ServerClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -12,12 +13,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class UIController {
-
-//    @Autowired
-//    public IService service;
+    
+    @Autowired
+   public ServerClient service;
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String Index(Model model) {
-        model.addAttribute("name", "123123");
+        model.addAttribute("name", service.add());
         return "index";
     }
 }
